@@ -12,9 +12,12 @@ const DayOfWeek = ({
   dateClass,
   weatherClass,
   tempClass,
+  borderBottom,
 }) => {
   return (
-    <div className="flex flex-col items-center">
+    <div
+      className={`${borderBottom} flex flex-row justify-between md:flex-col items-center`}
+    >
       <Name value={weekday} className={nameClass} />
       <Date value={date} className={dateClass} />
       <WeatherIcon imageUrl={weatherUrl} alt={alt} className={weatherClass} />

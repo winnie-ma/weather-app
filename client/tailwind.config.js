@@ -4,6 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: { alimama: ["AlimamaFangYuanTiVF-Square", "helvetica"] },
+      gridTemplateRows: {
+        12: "repeat(12, minmax(0, 1fr))",
+      },
     },
   },
   plugins: [],

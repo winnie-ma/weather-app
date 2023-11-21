@@ -12,7 +12,7 @@ const City = ({
   console.log(backgroundColor);
   return (
     <div
-      className={`flex flex-col items-center justify-center text-white rounded-2xl w-[23%] ${backgroundColor}`}
+      className={`flex flex-col items-center justify-center text-white rounded-2xl  ${backgroundColor} w-[48%] lg:w-[23%]`}
     >
       <WeatherIcon imageUrl={weatherUrl} alt={alt} className="w-10 h-10" />
       <Name value={city} className="text-xl font-semibold" />

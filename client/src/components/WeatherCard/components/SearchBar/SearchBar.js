@@ -1,6 +1,6 @@
 const SearchBar = () => {
   return (
-    <div className="rounded-md bg-white w-1/2 p-1 flex justify-between text-sm">
+    <div className="rounded-md bg-white lg:w-1/2 p-1 flex justify-between text-xl lg:text-sm">
       <input
         type="text"
         placeholder="Search for a city"

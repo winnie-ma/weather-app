@@ -11,7 +11,7 @@ const OtherCities = ({ cities }) => {
     };
   });
   return (
-    <div className="flex justify-between h-full">
+    <div className="flex justify-between flex-wrap h-full gap-y-2">
       {citiesData.map((city) => (
         <City
           key={`${city.name}`}
