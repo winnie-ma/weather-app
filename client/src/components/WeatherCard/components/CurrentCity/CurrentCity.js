@@ -6,17 +6,25 @@ import Date from "../../../Date";
 import Name from "../../../Name";
 import Image from "./components/Image";
 import bg from "./assets/Cloudy_day_background.png";
-import icon from "../../../WeatherIcon/assets/Cloudy_day.png";
-const CurrentCity = () => {
+import icon from "../../../WeatherIcon/assets/Cloudy.png";
+import { getIcon } from "../../../../utils/getIcon";
+import { getBg } from "../../../../utils/getBackground";
+const CurrentCity = ({ weatherData }) => {
+  const weatherIcon = getIcon(weatherData.weather);
+  const backgroundImage = getBg(weatherData.weather);
   return (
     <div className="flex flex-col items-center justify-evenly h-full pt-10 lg:space-y-6 lg:p-0">
-      <Image imageUrl={bg} alt="cloud" className="absolute top-0 right-0" />
+      <Image
+        imageUrl={backgroundImage}
+        alt={weatherData.weather}
+        className="absolute top-0 right-0"
+      />
       <Date
-        value="20 July, Sunday 12:00"
+        value={weatherData.dateTime}
         className="text-white absolute top-2 left-4 lg:static"
       />
       <Name
-        value="New York"
+        value={weatherData.cityName}
         className="text-white
       font-bold text-2xl lg:text-3xl"
       />
@@ -24,9 +32,12 @@ const CurrentCity = () => {
         value="20"
         className="text-slate-200 font-bold text-6xl lg:text-8xl"
       />
-      <TemperatureRange value="18 ~ 20" className="text-white" />
-      <WeatherIcon imageUrl={icon} alt="cloud" />
-      <Meta />
+      <TemperatureRange
+        value={`${weatherData.minTemp} ~ ${weatherData.maxTemp}`}
+        className="text-white"
+      />
+      <WeatherIcon imageUrl={weatherIcon} alt="cloud" />
+      <Meta weatherData={weatherData} />
     </div>
   );
 };
