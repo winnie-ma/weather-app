@@ -1,16 +1,15 @@
 import { fetchWeather } from "../../apis/fetchWeather";
 import { getCityData } from "../../utils/getCityData";
 import { formatForecastData } from "../../utils/formatForecastData";
-import CurrentCity from "./components/CurrentCity/CurrentCity";
-import Forecast from "./components/Forecast/Forecast";
-import OtherCities from "./components/OtherCities/OtherCities";
-import SearchBar from "./components/SearchBar/SearchBar";
+import CurrentCity from "./components/CurrentCity";
+import Forecast from "./components/Forecast";
+import OtherCities from "./components/OtherCities";
+import SearchBar from "./components/SearchBar";
 import { useEffect, useState } from "react";
 
 const WeatherCard = () => {
   const cities = ["Sydney", "Shanghai", "Melbourne", "London", "Beijing"];
   const [allCities, setCities] = useState(cities);
-  const otherCities = allCities.slice(1);
   const [isLoading, setIsLoading] = useState(true);
   const [isError, setIsError] = useState(false);
   const [weatherDataList, setWeatherDataList] = useState([]);
@@ -64,7 +63,7 @@ const WeatherCard = () => {
     setIsError(false);
   };
   return (
-    <div className="w-11/12 lg:w-4/5 h-4/5 mx-auto rounded-3xl bg-violet-50 overflow-hidden shadow-blue-800 grid grid-rows-12 min-h-[1100px] lg:grid-cols-6 lg:grid-rows-6 lg:min-h-[680px]">
+    <div className="w-11/12 lg:w-4/5 h-4/5 mx-auto rounded-3xl bg-violet-50 overflow-hidden shadow-blue-800 grid grid-rows-12 min-h-[1200px] lg:grid-cols-6 lg:grid-rows-6 lg:min-h-[680px] lg:max-h-[900px]">
       {isLoading ? (
         <div className="row-span-6 col-span-6 max-md:h-screen text-5xl flex items-center justify-center">
           <p>Data is loading...</p>

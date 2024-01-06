@@ -1,6 +1,6 @@
 export const fetchWeather = async (cityName, forecastCity, lon, lat) => {
-  const apiKey = "e38face67109188f2bf212d0cb16317c";
-  const apiUrl = "https://api.openweathermap.org/data/2.5/";
+  const apiKey = process.env.APIKET;
+  const apiUrl = process.env.APIURL;
   let url;
   if (cityName) {
     url = `${apiUrl}weather?q=${cityName}&appid=${apiKey}&units=metric`;

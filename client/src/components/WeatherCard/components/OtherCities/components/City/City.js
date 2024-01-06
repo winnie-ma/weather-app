@@ -13,6 +13,7 @@ const City = ({
   return (
     <div
       className={`flex flex-col items-center justify-center text-white rounded-2xl w-[48%] lg:w-[23%] relative`}
+      onClick={() => switchCurrentCity(city)}
     >
       <Image
         imageUrl={backgroundImg}

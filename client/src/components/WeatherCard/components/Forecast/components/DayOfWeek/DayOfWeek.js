@@ -1,7 +1,7 @@
-import TemperatureRange from "../../../../../TemperatureRange/TemperatureRange";
+import TemperatureRange from "../../../../../TemperatureRange";
 import Name from "../../../../../Name";
 import Date from "../../../../../Date";
-import WeatherIcon from "../../../../../WeatherIcon/WeatherIcon";
+import WeatherIcon from "../../../../../WeatherIcon";
 const DayOfWeek = ({
   weekday,
   date,

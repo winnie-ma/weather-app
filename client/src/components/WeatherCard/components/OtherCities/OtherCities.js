@@ -1,4 +1,4 @@
-import City from "./components/City/City";
+import City from "./components/City";
 import { getIcon } from "../../../../utils/getIcon";
 import London from "./assets/London.png";
 import Newyork from "./assets/Newyork.png";
