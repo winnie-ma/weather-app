@@ -29,14 +29,14 @@ const CurrentCity = ({ weatherData }) => {
       font-bold text-2xl lg:text-3xl"
       />
       <Temperature
-        value="20"
+        value={weatherData.currentTemp}
         className="text-slate-200 font-bold text-6xl lg:text-8xl"
       />
       <TemperatureRange
         value={`${weatherData.minTemp} ~ ${weatherData.maxTemp}`}
         className="text-white"
       />
-      <WeatherIcon imageUrl={weatherIcon} alt="cloud" />
+      <WeatherIcon imageUrl={weatherIcon} alt={weatherData.weather} />
       <Meta weatherData={weatherData} />
     </div>
   );

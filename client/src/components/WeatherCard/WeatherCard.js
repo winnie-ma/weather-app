@@ -73,7 +73,7 @@ const WeatherCard = () => {
      lg:m-6
     "
       >
-        <Forecast />
+        <Forecast forecastData={forecastData} />
       </div>
       <div
         className="row-start-1 row-span-1 lg:row-start-4 lg:col-start-3 lg:col-span-4 m-4 lg:m-6
