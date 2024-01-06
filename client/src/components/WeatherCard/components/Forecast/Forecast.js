@@ -4,8 +4,9 @@ const Forecast = ({ forecastData }) => {
   return (
     <div className="flex flex-col border-solid border border-slate-300 rounded-xl md:border-0 md:flex-row md:px-0">
       {forecastData.length > 0 &&
-        forecastData.map((data) => (
+        forecastData.map((data, index) => (
           <DayOfWeek
+            key={`next ${index + 1} weather`}
             weekday={data.dayOfWeek}
             date={data.date}
             weatherUrl={getIcon(data.weather)}

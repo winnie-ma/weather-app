@@ -104,7 +104,10 @@ const WeatherCard = () => {
             className="row-start-10 row-span-3 lg:row-span-2 lg:col-span-4 mx-4 mt-0 mb-6 lg:m-6
     "
           >
-            <OtherCities cities={otherCities} />
+            <OtherCities
+              weatherDataList={weatherDataList.slice(1)}
+              switchCurrentCity={switchCurrentCity}
+            />
           </div>
         </>
       )}
