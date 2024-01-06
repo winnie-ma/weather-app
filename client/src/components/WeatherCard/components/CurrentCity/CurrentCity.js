@@ -5,8 +5,6 @@ import Temperature from "./components/Temperature";
 import Date from "../../../Date";
 import Name from "../../../Name";
 import Image from "./components/Image";
-import bg from "./assets/Cloudy_day_background.png";
-import icon from "../../../WeatherIcon/assets/Cloudy.png";
 import { getIcon } from "../../../../utils/getIcon";
 import { getBg } from "../../../../utils/getBackground";
 const CurrentCity = ({ weatherData }) => {
