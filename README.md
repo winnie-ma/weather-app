@@ -1,5 +1,7 @@
 # weather-app
 
+[Live Demo](https://winnieweatherappreact.netlify.app)
+
 ## Description
 
 This is a weather app that allows the user to search for a city and get the current weather and a 4 day forecast. The user can also click on a city in the search history to get the weather for that city again.
@@ -9,7 +11,6 @@ This is a weather app that allows the user to search for a city and get the curr
 ![image](./weather_desktop.png)
 ![image](./weather_mobile_1.png)
 ![image](./weather_mobile_2.png)
-[Live Demo](https://winnieweatherappreact.netlify.app)
 
 ## Technologies Used
 
