@@ -1,6 +1,6 @@
 export const fetchWeather = async (cityName, forecastCity, lon, lat) => {
-  const apiKey = process.env.APIKEY;
-  const apiUrl = process.env.APIURL;
+  const apiKey = process.env.REACT_APP_APIKET;
+  const apiUrl = process.env.REACT_APP_APIURL;
   let url;
   if (cityName) {
     url = `${apiUrl}weather?q=${cityName}&appid=${apiKey}&units=metric`;
