@@ -1,5 +1,5 @@
 export const fetchWeather = async (cityName, forecastCity, lon, lat) => {
-  const apiKey = process.env.APIKET;
+  const apiKey = process.env.APIKEY;
   const apiUrl = process.env.APIURL;
   let url;
   if (cityName) {
