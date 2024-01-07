@@ -1,8 +1,6 @@
 # STEPS
 
-## STEP ONE：
-
-### SPLIT COMPONENTS BASED ON RESPONSIBILITY
+## SPLIT COMPONENTS BASED ON RESPONSIBILITY
 
 - App
   - WeatherCard
@@ -32,7 +30,7 @@
         - Name
         - TemperatureRange
 
-### EXTRACT COMMON COMPONENTS
+## EXTRACT COMMON COMPONENTS
 
 - WeatherIcon
 - TemperatureRange
